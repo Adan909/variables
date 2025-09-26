@@ -5,7 +5,6 @@ namespace variables
 {
     public partial class FrmLogin : Form
     {
-        // Variable global (de clase)
         private int intentos = 0;
 
         public FrmLogin()
@@ -27,8 +26,10 @@ namespace variables
         {
             if (Login(tbUser.Text, tbPassword.Text))
             {
-                new Form1().Show();
-                this.Hide();
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+                //new FrmPrincipal().Show();
+                
             }
             else
             {
@@ -51,6 +52,11 @@ namespace variables
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
