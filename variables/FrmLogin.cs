@@ -28,7 +28,7 @@ namespace variables
             {
                 this.DialogResult = DialogResult.OK;
                 this.Close();
-                //new FrmPrincipal().Show();
+                
                 
             }
             else
