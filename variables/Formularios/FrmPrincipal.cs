@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using variables.Formularios;
 using variables.Modelos;
 
 namespace variables
@@ -21,7 +22,13 @@ namespace variables
         {
             this.Close ();
         }
-    }
+
+        private void edadesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmArreglo frm = new FrmArreglo();
+            frm.ShowDialog();
+        }
+    }  
 
 }
 
