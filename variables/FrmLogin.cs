@@ -24,16 +24,22 @@ namespace variables
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+
+            Logear();
+        }
+
+        private void Logear()
+        {
             if (Login(tbUser.Text, tbPassword.Text))
             {
                 this.DialogResult = DialogResult.OK;
                 this.Close();
-                
-                
+
+
             }
             else
             {
-                intentos++; 
+                intentos++;
                 MessageBox.Show("Usuario o contraseña incorrectos. Intento " + intentos);
 
                 if (intentos == 3)
@@ -43,7 +49,6 @@ namespace variables
                 }
             }
         }
-
         private Boolean Login(string username, string password)
         {
             return username.Equals("admin") && password.Equals("admin");
