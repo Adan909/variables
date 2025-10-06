@@ -38,6 +38,7 @@ namespace variables
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.lblFecha = new System.Windows.Forms.ToolStripStatusLabel();
+            this.matrizToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -72,7 +73,8 @@ namespace variables
             // catalogosToolStripMenuItem
             // 
             this.catalogosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.edadesToolStripMenuItem});
+            this.edadesToolStripMenuItem,
+            this.matrizToolStripMenuItem});
             this.catalogosToolStripMenuItem.Name = "catalogosToolStripMenuItem";
             this.catalogosToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
             this.catalogosToolStripMenuItem.Text = "Catalogos";
@@ -106,6 +108,13 @@ namespace variables
             this.lblFecha.Size = new System.Drawing.Size(38, 17);
             this.lblFecha.Text = "Fecha";
             this.lblFecha.Click += new System.EventHandler(this.toolStripStatusLabel1_Click);
+            // 
+            // matrizToolStripMenuItem
+            // 
+            this.matrizToolStripMenuItem.Name = "matrizToolStripMenuItem";
+            this.matrizToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.matrizToolStripMenuItem.Text = "Matriz";
+            this.matrizToolStripMenuItem.Click += new System.EventHandler(this.matrizToolStripMenuItem_Click);
             // 
             // FrmPrincipal
             // 
@@ -143,6 +152,7 @@ namespace variables
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel lblFecha;
         private System.Windows.Forms.ToolStripMenuItem edadesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem matrizToolStripMenuItem;
     }
 }
 
